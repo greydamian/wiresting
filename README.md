@@ -14,9 +14,9 @@ layer (layer 2) of a network interface.
 Compatibility
 -------------
 
-    * Linux
-    * Unix
-    * OS X
+* Linux
+* Unix
+* OS X
 
 Installation
 ------------
