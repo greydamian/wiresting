@@ -21,8 +21,10 @@
 #include <pcap/pcap.h>
 
 /*
+ * stdlib.h: free()
  * greyio.h: readall()
  */
+#include <stdlib.h>
 #include "greyio.h"
 
 static const char *version = "v1.0.0";
@@ -85,6 +87,8 @@ int main(int argc, char *argv[]) {
     }
 
     pcap_close(pcap_handle);
+
+    free(buf);
 
     return 0; /* exit success */
 }
