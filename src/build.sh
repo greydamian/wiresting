@@ -2,12 +2,15 @@
 
 CC="cc"; # c compiler command
 
-SOURCE="greyio.c wiresting.c";
-OUTPUT="../bin/wiresting";
+SRC="greyio.c wiresting.c";
+OUT="../bin/wiresting";
 
 # compiler & linker flags
 CFLAGS="";
-LDFLAGS="-lpcap";
+IFLAGS="";
+LFLAGS="";
+
+LIBS="-lpcap";
 
 # create output directory
 mkdir -p ../bin;
@@ -19,5 +22,5 @@ then
 fi
 
 # compile/link source code
-$CC $CFLAGS -o $OUTPUT $SOURCE $LDFLAGS;
+$CC $CFLAGS -o $OUT $SRC $IFLAGS $LFLAGS $LIBS;
 
