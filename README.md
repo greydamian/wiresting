@@ -6,7 +6,8 @@ Overview
 
 Packet injection utility, using libpcap.
 
-Wiresting is essentially a libpcap translation of wirefang.
+Wiresting is essentially a libpcap translation of 
+[wirefang](https://github.com/greydamian/wirefang).
 
 Wiresting reads bytes from a file and then writes those bytes to the data link 
 layer (layer 2) of a network interface.
@@ -14,9 +15,14 @@ layer (layer 2) of a network interface.
 Compatibility
 -------------
 
-* Linux
-* Unix
-* OS X
+* Linux\*
+  * libpcap
+* Unix\*
+  * libpcap
+* Apple OS X\*
+  * libpcap
+
+\* With dependencies from sublist
 
 Installation
 ------------
